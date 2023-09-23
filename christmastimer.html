@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+<?php
+
+// Define a constant for the timezone
+define('TIMEZONE', 'America/Los_Angeles');
+
+// Set the start date/time
+$startDate = time();
+
+// Set the end date/time
+$endDate = strtotime('December 24, 2023 23:59:59', TIMEZONE);
+
+// Calculate the countdown
+$seconds = $endDate - $startDate;
+
+// Extract the days, hours, minutes, and seconds
+$days = floor($seconds / 86400);
+$seconds -= $days * 86400;  
+
+$hours = floor($seconds / 3600);
+$seconds -= $hours * 3600;
+
+$minutes = floor($seconds / 60);  
+$seconds -= $minutes * 60;
+
+// Add Christmas styling
+echo "<div style='text-align:center; background: url(tree.jpg); background-size: cover; padding: 50px;'>";
+
+// Flashing text  
+echo "<span style='color: red; font-family: Cursive; font-size: 80px; text-shadow: 2px 2px green; animation: blink 1s linear infinite;'>", 
+     "$days", "days ", "$hours", "hours ", "$minutes", "minutes and ", "$seconds", "seconds", "</span>";
+
+// Snowflakes with CSS  
+echo "<span class='snowflake'>❅</span>";
+
+// Christmas music
+echo "<audio autoplay='autoplay'><source src='jinglebells.mp3' type='audio/mpeg'></audio>"; 
+
+echo "</div>";
+
+// Function to calculate the countdown
+function countdown($startDate, $endDate) {
+  $seconds = $endDate - $startDate;
+
+  // Extract the days, hours, minutes, and seconds
+  $days = floor($seconds / 86400);
+  $seconds -= $days * 86400;  
+
+  $hours = floor($seconds / 3600);
+  $seconds -= $hours * 3600;
+
+  $minutes = floor($seconds / 60);  
+  $seconds -= $minutes * 60;
+
+  return array($days, $hours, $minutes, $seconds);
+}
+
+// Reset the countdown
+function resetCountdown() {
+  global $startDate;
+  $startDate = time();
+}
+
+// Check if the countdown is over
+if (countdown($startDate, strtotime('December 24, 2023 23:59:59', TIMEZONE))[0] <= 0) {
+  echo "The countdown is over!";
+} else {
+  echo countdown($startDate, strtotime('December 24, 2023 23:59:59', TIMEZONE));
+}
+
+?>
+
+</body>
+</html>
+

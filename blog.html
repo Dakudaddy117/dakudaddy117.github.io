@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Blogging Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body{margin: 0px;padding: 0px;font-family: 'Poppins', sans-serif;font-size: 13px;}
+        .col-100{width: 100%;}
+        .container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar{
+/*    position: fixed;*/
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+    background: #464646;
+    display: table;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items{
+    padding-left: unset !important;margin-left: unset;
+    order: 2;
+     margin-top:unset;
+     margin-bottom:unset;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: inline-block;
+        border: 1px solid #6c6c6c;
+    line-height: 10px;
+    margin-bottom: 5px;
+}
+.navbar a{
+    color: #fff;
+    padding:10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    color: #117964;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a>|</li>
+<li><a href="Automotive.html">Automotive</a>|</li>
+<li><a href="scrap.html">Scrap News</a>|</li>
+<li><a href="christmastimer.html">Christmastimer</a>|</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-100">
+
+<h1>Daily Blogging Guide</h1>
+
+<h2>I. Introduction to Daily Blogs</h2>
+
+<h3>Definition and Purpose</h3>
+<p>Daily blogs are online journals or websites where bloggers publish new content every day like <a href="https://thewavesoftech.com/">net worth</a> news, movie reviews, real time news. The purpose of a daily blog is to share thoughts, ideas, experiences, and information with a wide audience. Daily blogging & <a href="https://thewavesoftech.com/submit-your-guest-post/">Guest Posting</a> allows for real-time updates and fosters a sense of connection with readers.</p>
+
+<h3>The Value of Daily Blogging</h3>
+<ul>
+    <li><strong>Consistency:</strong> Daily blogging establishes a regular posting schedule, which can attract and retain readers who appreciate frequent updates.</li>
+    <li><strong>Fresh Content:</strong> Daily blogs provide fresh content for search engines, improving visibility and search rankings.</li>
+    <li><strong>Audience Engagement:</strong> Frequent updates keep readers engaged, encouraging them to return for new content regularly.</li>
+    <li><strong>Personal Growth:</strong> Daily blogging can help bloggers improve their writing skills, discipline, and creativity.</li>
+</ul>
+
+<h2>II. Selecting a Niche or Topic</h2>
+
+<h3>Finding Your Passion</h3>
+<ul>
+    <li><strong>Identify Interests:</strong> Choose a niche or topic that genuinely interests you to maintain enthusiasm for daily blogging.</li>
+    <li><strong>Expertise:</strong> Consider your knowledge and expertise in a particular field as it can enhance the quality of your content.</li>
+    <li><strong>Audience Relevance:</strong> Ensure your chosen niche aligns with the interests of your target audience.</li>
+</ul>
+
+<h3>Identifying Your Target Audience</h3>
+<ul>
+    <li><strong>Demographics:</strong> Define your target audience based on age, gender, location, and other demographics.</li>
+    <li><strong>Interests and Needs:</strong> Understand the interests and needs of your audience to create relevant and engaging content.</li>
+    <li><strong>Market Research:</strong> Conduct market research to identify gaps in content and topics that resonate with your audience.</li>
+</ul>
+
+<h2>III. Setting Up Your Blog</h2>
+
+<h3>Choosing a Blogging Platform</h3>
+<ul>
+    <li><strong>WordPress:</strong> Considered one of the most popular blogging platforms, known for its flexibility and customization options.</li>
+    <li><strong>Blogger:</strong> A user-friendly platform with integration with Google services.</li>
+    <li><strong>Medium:</strong> A platform known for its simplicity and built-in audience.</li>
+    <li><strong>Custom Domains:</strong> Purchase and configure a custom domain for branding purposes.</li>
+</ul>
+
+<h3>Customizing Your Blog's Design</h3>
+<ul>
+    <li><strong>Themes and Templates:</strong> Select a visually appealing and responsive theme or template that suits your niche.</li>
+    <li><strong>Logo and Branding:</strong> Create a unique logo and branding elements to establish a strong online identity.</li>
+    <li><strong>Navigation:</strong> Organize your blog's menu and categories for easy navigation.</li>
+    <li><strong>Mobile Optimization:</strong> Ensure your blog is mobile-friendly for a seamless user experience on smartphones and tablets.</li>
+</ul>
+
+<h2>IV. Creating a Content Strategy</h2>
+
+<h3>Daily Posting Schedule</h3>
+<ul>
+    <li><strong>Consistency:</strong> Stick to a daily posting schedule, whether it's in the morning, afternoon, or evening, to train your readers when to expect new content.</li>
+    <li><strong>Editorial Calendar:</strong> Plan your content in advance using an editorial calendar to ensure variety and coherence.</li>
+</ul>
+
+<h3>Content Planning and Organization</h3>
+<ul>
+    <li><strong>Keyword Research:</strong> Identify relevant keywords to optimize your content for search engines.</li>
+    <li><strong>Topic Variety:</strong> Include a mix of informative, entertaining, and engaging content to cater to different reader interests.</li>
+    <li><strong>Content Length:</strong> Determine the appropriate length for your posts, balancing depth with reader attention spans.</li>
+</ul>
+
+<h2>V. Writing Compelling Daily Posts</h2>
+
+<h3>Crafting Attention-Grabbing Headlines</h3>
+<ul>
+    <li><strong>Clarity:</strong> Ensure headlines clearly convey the topic or benefit of reading the post.</li>
+    <li><strong>Curiosity:</strong> Use curiosity-inducing words or questions to pique readers' interest.</li>
+    <li><strong>Keyword Optimization:</strong> Include relevant keywords in headlines for SEO.</li>
+</ul>
+
+<h3>Engaging Introductions and Hooking Readers</h3>
+<ul>
+    <li><strong>Anecdotes:</strong> Start with a personal story or anecdote to connect with readers.</li>
+    <li><strong>Statistics or Facts:</strong> Use surprising statistics or facts to grab attention.</li>
+    <li><strong>Questions:</strong> Pose a thought-provoking question that encourages readers to continue.</li>
+</ul>
+
+<!-- Continue the rest of the outline as needed -->
+
+</body>
+</html>
